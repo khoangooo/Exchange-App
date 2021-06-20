@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # lock file
-yarn.lock
+./yarn.lock
 package-lock.json
 
 .husky
