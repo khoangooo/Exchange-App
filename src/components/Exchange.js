@@ -9,7 +9,7 @@ function Exchange() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Go to Chakra UI GitHub page"
-                href="https://github.com/chakra-ui/chakra-ui"
+                href="https://github.com/khoangooo/Exchange-App"
                 className="text-center"
             >
                 <svg viewBox="0 0 20 20" focusable="false" className="github">
