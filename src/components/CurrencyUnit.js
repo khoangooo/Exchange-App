@@ -1,37 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Form, Row, Col } from "react-bootstrap";
 import ReactCountryFlag from "react-country-flag";
-import axios from "axios";
 
 function CurrencyUnit(props) {
-    const { title, code, handleChangeCode, setResult } = props;
-    const [countries, setCountries] = useState([]);
+    const { countries, title, code, handleChangeCode } = props;
     const [countryCode, setCountryCode] = useState(code);
 
-    useEffect(() => {
-        axios
-            .get("https://api.frankfurter.app/currencies")
-            .then((res) => {
-                let newCountries = [];
-                if (res.data.length !== 0) {
-                    for (let item in res.data) {
-                        newCountries.push({
-                            name: res.data[item],
-                            code: item,
-                        });
-                    }
-                } else {
-                    newCountries = [];
-                }
-                setCountries(newCountries);
-            })
-            .catch((err) => {
-                setCountries([]);
-            });
-    }, []);
-
     const handleChangeCurrency = (e) => {
-        setResult("");
         handleChangeCode(e.target.value);
         setCountryCode(e.target.value);
     };

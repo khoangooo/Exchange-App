@@ -34,28 +34,21 @@
 
 @media screen and (max-width: 576px) {
     .github {
+        width: 20%;
+        margin: 4em auto auto;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .github {
         width: 10%;
-        margin: 2em auto auto;
+        margin: 5em auto auto;
     }
 }
 
 @media screen and (min-width: 768px) {
     .github {
-        width: 10%;
-        margin: 12em auto auto;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .github {
-        width: 10%;
-        margin: 15em auto auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .github {
-        width: 5%;
+        width: 8%;
         margin: 2em auto auto;
     }
 }
